@@ -2,6 +2,7 @@
 A Python-based simulation of the classic Enigma encryption machine, created for learning and experimenting with encryption concepts.
 
 Features
+
 🔐 Encryption and decryption
 
 ⚙️ Three rotors
@@ -20,43 +21,61 @@ How It Works
 Each character passes through three rotors and a reflector before being transformed into the encrypted character.
 
 Code
+
 Input
+
   ↓
+
 Rotor 1
+
   ↓
+
 Rotor 2
+
   ↓
+
 Rotor 3
+
   ↓
+
 Reflector
+
   ↓
+
 Rotor 3
+
   ↓
+
 Rotor 2
+
   ↓
+
 Rotor 1
+
   ↓
+  
 Output
+
 The first rotor rotates after every character, while the other rotors rotate after completing a full cycle.
 This makes the encryption dependent on the position of each character.
 
-Project Structure
+Project Structure:
 Code
+
 .
+
 ├── enigma_machine.py
+
 └── README.md
-Main Components
+
+Main Components:
 EnigmaMachine — Handles the encryption system and machine configuration.
-
 rotate_rotor() — Rotates the machine's rotors.
-
 validate_message() — Validates user input.
-
 encrypt_decrypt() — Encrypts or decrypts the message.
-
 main() — Provides the command-line interface.
 
-Installation
+Installation:
 Make sure Python 3 is installed.
 
 bash
@@ -66,7 +85,6 @@ No external dependencies are required.
 
 Usage
 Run:
-
 bash
 python enigma_machine.py
 Then enter your message:
@@ -90,12 +108,13 @@ This is an educational simulation inspired by the Enigma machine.
 It is not a historically accurate implementation and should not be used for real-world security or sensitive information.
 
 Future Improvements
-Configurable rotor positions
 
-Plugboard support
+✅ Configurable rotor positions
 
-Historically accurate Enigma configuration
+✅ Plugboard support
 
-Graphical User Interface
+✅ Historically accurate Enigma configuration
 
-Unit tests
+✅ Graphical User Interface
+
+✅ Unit tests
